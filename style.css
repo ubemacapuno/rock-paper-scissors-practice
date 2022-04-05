@@ -1,0 +1,111 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     text-align: center;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background-color: #101838;
+     color: white;
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+
+h1 {
+     justify-content: center;
+     align-items: center;
+}
+
+ul{
+     display: flex;
+     align-items: center;
+}
+
+li, button {
+     color: white;
+     border-radius: 50px;
+     margin: 10px;
+     text-align: center;
+     background: #e9b002;
+     font-size: 20px;
+     padding: 3px;
+}
+
+li {
+     list-style: none;
+     /* margin: 20px 5px; */
+}
+
+.trainer-selections {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 20px 0px;
+     background-image: url(../poke-forest-dark.png);
+     background-size: cover;
+     height: 40vh;
+}
+
+.player-section, .rival-section {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 30px 100px;
+
+}
+
+.outcome, .scoreboard {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+
+.rivalPokemon {
+     visibility: hidden;
+}
+
+/* Hidden class for the sprite images */
+.hidden {
+     display: none;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.player-sprites img {
+     transform: scaleX(-1); /*Flips image */
+}

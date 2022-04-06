@@ -1,0 +1,158 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     text-align: center;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background-color: #101838;
+     color: white;
+     width: 100%;
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     width: 100%;
+     margin: 0 auto;
+}
+
+header p{
+     margin: 0 auto;
+}
+
+h1 {
+     justify-content: center;
+     color: #FFCC01;
+     align-items: center;
+     font-family: 'Bebas Neue', cursive;
+     text-shadow: 1px 1px 3px #395AA7, 1px 1px 3px #395AA7, 1px 1px 3px #395AA7, 1px 1px 3px #395AA7;
+     font-size: 2.1rem;
+     letter-spacing: 0.2rem;
+}
+
+h3 {
+     border-radius: 50px;
+     margin: 20px;
+     padding: 2px;
+     text-align: center;
+     /* background-color: hsla(228, 55%, 14%, 0.8); */
+     color: white;
+}
+
+ul{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     margin: auto;
+     padding: 0;
+}
+
+
+li {
+     list-style: none;
+     color: white;
+     border-radius: 50px;
+     margin: 20px;
+     padding: 2px;
+     text-align: center;
+     background:  hsla(45, 98%, 46%, 0.8);
+     font-size: 20px;
+     width: 150px;
+     height: 30px;
+    
+}
+
+.trainer-selections {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     /* margin: 20px 0px; */
+     background-image: url(../poke-forest-dark.png);
+     background-size: cover;
+     height: 500px;
+     flex-direction: column;
+}
+
+.player-section, .rival-section {
+     /* border: 1px solid white; */
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     /* margin: 30px 100px; */
+     background-color: hsla(228, 55%, 14%, 0.5);
+     width: 100%;
+     justify-content: space-evenly;
+
+
+}
+
+.outcome, .scoreboard {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+
+.rivalPokemon {
+     visibility: hidden;
+}
+
+.outcome p {
+     font-size: 20px;
+     margin: 5px;
+}
+
+
+/* Hidden class for the sprite images */
+.hidden {
+     display: none;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+img {
+     /* background-color: hsla(228, 55%, 14%, 0.5); */
+     /* border-radius: 40%; */
+}
+
+.player-sprites img {
+     transform: scaleX(-1); /*Flips image */
+     
+}
+
+td {
+     margin: 0 60px;
+}

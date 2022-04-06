@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+		<title>Rock Paper Scissors Practice</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<header>
+			<h1>Starter Pokémon Battles</h1>
+		</header>
+
+		<section class="trainer-selections">
+			<div class = "choices">
+				<h2>Choose your Pokémon!</h2>
+				<ul>
+					<li class="userPokemon" id="charmanderChoose">Charmander</li>
+					<li class="userPokemon" id="bulbasaurChoose">Bulbasaur</li>
+					<li class="userPokemon" id="squirtleChoose">Squirtle</li>
+				</ul>
+			</div>
+
+			<div class = "player-section">
+				<h3>Your Pokémon:</h3>
+				<div class="player-sprites">
+					<i class="hidden" id="charmander"><img src="https://img.pokemondb.net/sprites/black-white/normal/charmander.png" alt="Charmander"></i>
+					<i class="hidden" id="bulbasaur"><img src="https://img.pokemondb.net/sprites/black-white/normal/bulbasaur.png" alt="Bulbasaur"></i>
+					<i class="hidden" id="squirtle"><img src="https://img.pokemondb.net/sprites/black-white/normal/squirtle.png" alt="Squirtle"></i>
+				</div>
+			</div>
+
+			<div class = "rival-section">
+				<h3>Rival's Pokémon:</h3>
+				<div class="rival-sprites">
+					<i class="hidden" id="rivalCharmander"><img src="https://img.pokemondb.net/sprites/black-white/normal/charmander.png" alt="Charmander"></i>
+					<i class="hidden" id="rivalBulbasaur"><img src="https://img.pokemondb.net/sprites/black-white/normal/bulbasaur.png" alt="Bulbasaur"></i>
+					<i class="hidden" id="rivalSquirtle"><img src="https://img.pokemondb.net/sprites/black-white/normal/squirtle.png" alt="Squirtle"></i>
+				</div>
+				<!-- <ul>
+					<li class="rivalPokemon">Charmander</li>
+					<li class="rivalPokemon">Bulbasaur</li>
+					<li class="rivalPokemon">Squirtle</li>
+				</ul> -->
+			</div>
+		</section>
+
+		<section class="outcome">
+			<p id="rivalChoice"></p>
+			<p id="outcome"></p>
+
+			<!-- <h3 id="Tie">
+				You both tied!
+			</h3>
+
+			<h3 id="Lose">
+				You lose!
+			</h3> -->
+		</section>
+
+		<div class="scoreboard">
+			<h2>Scoreboard</h2>
+
+			<!-- <div class="trainerScoreboard">
+				<h4>You:</h4>
+				<h4 id="trainerScore">0</h4>
+			</div>
+
+
+			<div class="rivalScoreboard">
+				<h4>Rival:</h4>
+				<h4 id="rivalScore">0</h4>
+			</div> -->
+			<table>
+			  <tbody>
+				<tr>
+				  <td id="trainerScore">0</td>
+				  <td id="rivalScore">0</td>
+				</tr>
+			  </tbody>
+			  <tfoot>
+				<tr>
+				  <th>You</th>
+				  <th>Rival</th>
+				</tr>
+			  </tfoot>
+			</table>
+			<button class="favorite styled" id="reset" type="button">
+				Reset Score
+			</button>
+		  </div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

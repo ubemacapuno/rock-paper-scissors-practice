@@ -1,4 +1,5 @@
 # rock-paper-scissors-practice
+Demo: https://poke-starter-battles.netlify.app/
 Rock Paper Scissors practice, but with Gen 1 starter Pokemon
 This is a project I created using Vanilla JS, HTML, and CSS. 
 It is a rock, paper, scissors application, but instead with the Gen 1 starter Pokémon!
